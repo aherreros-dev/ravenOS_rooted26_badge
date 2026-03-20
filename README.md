@@ -142,11 +142,11 @@ The author assumes no responsibility for misuse.
 
 ---
 
-<div align="center">
 
-`REDR4VEN`
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&pause=0&color=FF0000&background=000000&center=true&vCenter=true&width=220&height=60&lines=redr4ven" alt="Ajuste del SVG de redr4ven" />
+</p>
 
-</div>
 
 
 
