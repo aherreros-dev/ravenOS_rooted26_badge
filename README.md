@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="imgs/raven.png" alt="r4venOS Logo" width="200"/>
   <h1>r4venOS - custom firmware </h1>
@@ -11,7 +10,6 @@
   <img src="https://img.shields.io/badge/Framework-PlatformIO-2c2c2c?style=flat-square&logo=platformio" alt="PlatformIO">
   <img src="https://img.shields.io/badge/Status-Educational_Use_Only-b30000?style=flat-square" alt="Educational">
 </div>
-
 
 ---
 
@@ -31,8 +29,8 @@ Everything runs directly on the ESP32 and the interface stays intentionally mini
 
 Flash the firmware using **PlatformIO**.
 
-```
-git clone https://github.com/aherreros-dev/ravenOS_rooted26_badge.git
+```bash
+git clone [https://github.com/aherreros-dev/ravenOS_rooted26_badge.git](https://github.com/aherreros-dev/ravenOS_rooted26_badge.git)
 cd ravenOS_rooted26_badge
 pio run --target upload
 ```
@@ -85,6 +83,7 @@ Stores recent events locally on the badge.
 | EXTRA        | Go back or stop current action |
 
 ---
+
 ## Pinout
 
 **Core:** ESP32 DevKit
@@ -92,28 +91,36 @@ Stores recent events locally on the badge.
 
 ### Display Interface (SPI)
 
-| Function      | ESP32 GPIO | Notes                              |
-| :------------ | :--------: | :--------------------------------- |
-| **MOSI**      |    `23`    | Master Out Slave In                |
-| **SCLK**      |    `18`    | Serial Clock                       |
-| **CS**        |     `5`    | Chip Select                        |
-| **DC**        |    `16`    | Data / Command                     |
-| **RST**       |     `4`    | Reset                              |
-| **BL**        |    `12`    | Backlight (Active LOW)             |
-| **SCREEN_EN** |    `21`    | Display Power Enable (Active HIGH) |
+| Function      | ESP32 GPIO | Notes                                |
+| :------------ | :--------: | :----------------------------------- |
+| **MOSI** |    `23`    | Master Out Slave In                  |
+| **SCLK** |    `18`    | Serial Clock                         |
+| **CS** |     `5`    | Chip Select                          |
+| **DC** |    `16`    | Data / Command                       |
+| **RST** |     `4`    | Reset                                |
+| **BL** |    `12`    | Backlight (Active LOW)               |
+| **SCREEN_EN** |    `21`    | Display Power Enable (Active HIGH)   |
 
 ### Input Matrix (D-Pad)
 
 *All buttons use `INPUT_PULLUP` and trigger on `LOW`.*
 
-| Button         | GPIO | Navigation Action                    |
-| :------------- | :--: | :----------------------------------- |
-| **UP**      | `27` | Move up / Scroll backward            |
-| **DOWN**    | `15` | Move down / Scroll forward           |
-| **LEFT**   | `25` | Previous page / secondary navigation |
-| **RIGHT**  | `26` | Next page / secondary navigation     |
+| Button     | GPIO | Navigation Action                    |
+| :--------- | :--: | :----------------------------------- |
+| **UP** | `27` | Move up / Scroll backward            |
+| **DOWN** | `15` | Move down / Scroll forward           |
+| **LEFT** | `25` | Previous page / secondary navigation |
+| **RIGHT** | `26` | Next page / secondary navigation     |
 | **SELECT** | `13` | Confirm / run tool                   |
-| **EXTRA**   | `33` | Back / stop action / lock badge      |
+| **EXTRA** | `33` | Back / stop action / lock badge      |
+
+### Power & Battery Management
+
+| Function    | GPIO  | Notes                                |
+| :---------- | :---: | :----------------------------------- |
+| **BAT_ADC** | `34`  | Battery voltage monitoring (ADC1_CH6)|
+| **3V3** | `3V3` | Regulated 3.3V logic output          |
+| **GND** | `GND` | Common ground                        |
 
 ---
 
@@ -142,15 +149,6 @@ The author assumes no responsibility for misuse.
 
 ---
 
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&pause=0&color=FF0000&background=000000&center=true&vCenter=true&width=220&height=60&lines=redr4ven" alt="Ajuste del SVG de redr4ven" />
 </p>
-
-
-
-
-
-
-
-
